@@ -1,0 +1,128 @@
+.backdrop {
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    /* height: 100%;
+    width: 100%; */
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    /* backdrop-filter: blur(2.5px); */
+}
+
+/* Spinner CSS Start*/
+.spinner {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+}
+
+.spinner.no-left {
+    left: 0;
+}
+
+.spinner .dot {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.spinner .dot:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #FFF;
+}
+
+.spinner.dark .dot:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #000;
+}
+
+.spinner .dot {
+    animation: spin 2s infinite;
+}
+
+.spinner .dot:nth-child(2) {
+    animation-delay: 100ms;
+}
+
+.spinner .dot:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+.spinner .dot:nth-child(4) {
+    animation-delay: 300ms;
+}
+
+.spinner .dot:nth-child(5) {
+    animation-delay: 400ms;
+}
+/* Spinner CSS End */
+
+/* Small Spinner Start */
+.smallspinner {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    /* top: 50%; */
+    /* left: 50%; */
+}
+
+.smallspinner .dot {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.smallspinner .dot:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #FFF;
+}
+
+.smallspinner.dark .dot:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #000;
+}
+
+.smallspinner .dot {
+    animation: spin 2s infinite;
+}
+
+.smallspinner .dot:nth-child(2) {
+    animation-delay: 100ms;
+}
+
+.smallspinner .dot:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+.smallspinner .dot:nth-child(4) {
+    animation-delay: 300ms;
+}
+
+.smallspinner .dot:nth-child(5) {
+    animation-delay: 400ms;
+}
+
+/* Spinner CSS End */
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
